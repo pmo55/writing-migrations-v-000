@@ -11,4 +11,11 @@ class CreateStudents < ActiveRecord::Migration[5.1]
     :database => "db/students.sqlite"
     )
     
+    sql=<<-SQL
+    CREATE TABLE IF NOT EXISTS students (
+    
+    
+    )
+    SQL
+    
 end
