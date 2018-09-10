@@ -8,6 +8,6 @@ class CreateStudents < ActiveRecord::Migration[5.1]
   connection= ActiveRecord::Base.establish_connectio(
     
     :adaptor => "sqlite3"),
-    :database => ""
+    :database => "db/artist."
     
 end
