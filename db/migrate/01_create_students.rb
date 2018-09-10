@@ -5,5 +5,7 @@ class CreateStudents < ActiveRecord::Migration[5.1]
     end
   end
   
-  connection= ActiveRecord::Base.establish_connection.
+  connection= ActiveRecord::Base.establish_connectio(
+    
+    :adaptor => )
 end
