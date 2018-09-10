@@ -17,4 +17,11 @@ def drop_db
   DB.tables.each do |table|
     DB.execute("DROP TABLE #{table}")
   end
+  
+    connection= ActiveRecord::Base.establish_connectio(
+    
+    :adaptor => "sqlite3",
+    :database => "db/students.sqlite"
+    )
+    
 end
